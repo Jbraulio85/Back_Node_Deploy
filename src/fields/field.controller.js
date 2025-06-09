@@ -16,7 +16,7 @@ export const addField = async (req, res) => {
       field,
     });
   } catch (e) {
-    console.error(e);
+    console.error(e.message);
     return res
       .status(500)
       .send("Algo salió mal al agregar el campo a la base de datos");
