@@ -5,9 +5,7 @@ import { generarJWT } from "../helpers/JWT-generate.js";
 export const register = async (req, res) => {
   try {
     const data = req.body;
-    console.log(req.file)
     let profilePicture = req.file ? req.file.filename : null;
-    console.log(profilePicture)
     const salt = bcryptjs.genSaltSync();
     const encryptedPassword = bcryptjs.hashSync(data.password, salt);
 
@@ -28,7 +26,6 @@ export const register = async (req, res) => {
       },
     });
   } catch (e) {
-    console.log(e);
     return res.status(500).send("No se pudo registrar el usuario"); 
   }
 };

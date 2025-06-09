@@ -3,11 +3,12 @@ import { CloudinaryStorage } from "multer-storage-cloudinary";
 import cloudinary from "cloudinary";
 import { extname } from "path"; // Asegúrate de importar extname correctamente
 
+
 // Configuración de Cloudinary
 cloudinary.v2.config({
-  cloud_name: 'dcrgnm3ud',
-  api_key: '655453188429764',
-  api_secret: '7DJJn3dB1hGQNAYYY0xM81Xr05M',
+  cloud_name: 'dug3apxt3',
+  api_key: '786179574348253',
+  api_secret: 'wZwIVPikeHiSL0xBkIgRubXs1GU',
 });
 
 // Configurar el almacenamiento en Cloudinary para imágenes de campos
